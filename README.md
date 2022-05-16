@@ -25,7 +25,7 @@ It is an Event ticket selling Application. Users are able to know the upcoming E
 1. Java
 
 ## Author Details
-Diana Kieru
-Joan Kariuki
-Maryanne Njuguna [Linktree Profile](https://linktr.ee/themaryanjuguna)
-Shannon Bulimo
+- Diana Kieru
+- Joan Kariuki
+- Maryanne Njuguna [Linktree Profile](https://linktr.ee/themaryanjuguna)
+- Shannon Bulimo
