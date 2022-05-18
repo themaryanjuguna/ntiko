@@ -19,6 +19,7 @@
                 <div class="col-lg-6">
                     <h1 class="display-5 fw-bold lh-1 mb-3">Event Description</h1>
                     <p class="lead">Event Description {{EventDetails}}.</p>
+                    <h3><span class="badge bg-danger"> Normal Ticket KES 1,500 {{Pricemoney}}</span></h3>
                     <div class="d-grid gap-2 d-md-flex justify-content-md-start">
                         <a type="button" class="btn btn-primary btn-lg px-4 me-md-2" href="#BuyTicket">Purchase Ticket</a>
                         <a type="button" class="btn btn-outline-secondary btn-lg px-4" href="/events">View other Events</a>
@@ -33,24 +34,78 @@
 
         <div class="container col-xxl-8 px-4 py-5">
             <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-                <div class="col-10 col-sm-8 col-lg-6">
-                    <h1 class="display-5 fw-bold lh-1 mb-3">Event Description</h1>
-                    <p class="lead">Event Description {{EventDetails}}.</p>
-                    <h3><span class="badge bg-danger">KES 5000 {{Pricemoney}}</span></h3>
-                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                        <a type="button" class="btn btn-primary btn-lg px-4 me-md-2" href="#BuyTicket">Purchase Ticket</a>
-                        <a type="button" class="btn btn-outline-secondary btn-lg px-4" href="/events">View other Events</a>
-                </div>
-                </div>
-                <div class="col-lg-6">
-                    <img src="/images/img.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
 
+                          <form class="p-4 p-md-5 border rounded-3 bg-light">
+                              <div>
+                                  <h3 class="text-center"> SELECT YOUR TICKETS</h3>
+                                  <hr class="my-4">
+                              </div>
+                              <div class="row g-2">
+                              <div class="col-md">
+                              <div class="form-floating mb-3">
+                                  <input name="Quantity" type="number" min="1" max="15" class="form-control" id="floatingInput" placeholder="How many tickets" autocomplete="off" required>
+                                  <label for="floatingInput">How many tickets?</label>
+                              </div>
+                              </div>
+                              <div class="col-md">
+                                  <div class="form-floating">
+                                      <select class="form-select" id="floatingSelectGrid" name="TicketType" required autocomplete="off">
+                                          <option>  </option>
+                                          <option value="1000">Early Bird</option>
+                                          <option value="500">Kidz</option>
+                                          <option value="1500">Normal</option>
+                                          <option value="2500">VIP</option>
+                                          <option value="3500">VVIP</option>
+                                      </select>
+                                      <label for="floatingSelectGrid">Select Ticket Type</label>
+                                  </div>
+                              </div>
+                              </div>
+                              <div class="row g-2">
+                                  <div class="col-md">
+                                      <div class="form-floating mb-3">
+                                        <input name="Name" type="text" class="form-control" id="floatingInput" placeholder="name@example.com" autocomplete="off" required>
+                                        <label for="floatingInput">Your Name</label>
+                                      </div>
+                                  </div>
+                                  <div class="col-md">
+                                      <div class="form-floating mb-3">
+                                          <input name="email" type="text" class="form-control" id="floatingInput" placeholder="name@example.com" autocomplete="off" required>
+                                          <label for="floatingInput">Your Email</label>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="row g-2">
+                                  <div class="col-md">
+                                      <div class="form-floating mb-3">
+                                          <input type="number" class="form-control" id="floatingPassword" placeholder="mobile number" required autocomplete="off">
+                                          <label for="floatingPassword">Mobile Number</label>
+                                      </div>
+                                  </div>
+                                      <div class="col-md">
+                                          <div class="form-floating mb-3">
+                                              <input type="text" name="Total" readonly class="form-control-plaintext p-2" id="floatingPlaintextInput" >
+                                              <label for="floatingPlaintextInput">Total Amount</label>
+                                          </div>
+                                      </div>
+                              </div>
+                              <button class="w-100 btn btn-lg btn-success" type="submit">Purchase Ticket</button>
+                            <hr class="my-4">
+                            <small class="text-muted">By clicking Purchase, you agree to the terms of use.</small>
+                        </form>
+                    </div>
+                <div class="col-10 col-sm-8 col-lg-6"></div>
+
+                <div>
+                    </div>
                 </div>
+
             </div>
         </div>
-
-
     </section>
+
+
+
 
 
 
