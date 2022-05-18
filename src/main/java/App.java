@@ -44,7 +44,7 @@ public class App {
         }, new HandlebarsTemplateEngine());
 
         //Eventnew page
-       get("/", (request, response) ->{
+       get("/Submission", (request, response) ->{
 
             return new ModelAndView(model, "Submission.hbs");
         }, new HandlebarsTemplateEngine());

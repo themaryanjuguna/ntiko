@@ -14,7 +14,7 @@
             </div>
             <div class="col-md-6 mx-auto col-lg-5 mt-4 mb-4">
 
-                <form class="p-4 p-md-5 border rounded-3 bg-danger bg-opacity-10">
+                <form action="/Submission" class="p-4 p-md-5 border rounded-3 bg-danger bg-opacity-10">
                     <div>
                         <span class="fs-4 text-center">Register Your Event Here</span><br>
                         <small class="text-muted text-center">We Will contact you for more information.</small>
@@ -25,11 +25,11 @@
                         <label for="floatingPassword">Name</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="tel" name="name" class="form-control" id="floatingPassword" placeholder="Format: 123-456-789012" autocomplete="off" required>
-                        <label for="floatingPassword">Mobile Number</label>
+                        <input name="telephoneNumber" type="tel" class="form-control" pattern="[0-9]{3}-[0-9]{3}-[0-9]{6}" id="floatingPassword" placeholder="Format: 123-456-789012" required autocomplete="off">
+                        <label for="floatingText">Mobile Number (123-456-789012)</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required autocomplete="off">
+                        <input name="" type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required autocomplete="off">
                         <label for="floatingInput">Email address</label>
                     </div>
 
