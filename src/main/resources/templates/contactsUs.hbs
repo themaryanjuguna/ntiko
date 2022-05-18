@@ -6,17 +6,17 @@
 
         <div class="container col-xl-10 col-xxl-8 px-4 py-5">
             <div class="row align-items-center g-lg-5 py-5">
-                <div class="col-lg-7 text-center text-lg-start">
+                <div class="col-lg-6 text-center text-lg-start">
                     <h1 class="display-4 fw-bold lh-1 mb-3">Contact us </h1>
                     <p class="col-lg-10 fs-4">If you have any inquires and/or feedback, please use the contact time and we'll get back to you within 24 hrs</p>
                 </div>
-                <div class="col-md-10 mx-auto col-lg-5">
-                    <form action="/Submission" class="p-4 p-md-5 border rounded-3 bg-warning bg-opacity-25">
+                <div class="col-md-10 mx-auto col-lg-6">
+                    <form action="/Submission" class="p-4 p-md-5 border rounded-3 bg-danger bg-opacity-25">
                         <div class="row g-2">
                             <p class="fs-5"> Contact Form</p>
                             <div class="col-md">
                                 <div class="form-floating mb-3">
-                                    <input name="name" type="text" class="form-control" id="floatingInputGrid" placeholder="Enter your names" autocomplete="off">
+                                    <input name="name" type="text" class="form-control" id="floatingInputGrid" placeholder="Enter your names" autocomplete="off" required>
                                     <label for="floatingInputGrid">Your Name</label>
                                 </div>
                                 <div class="form-floating mb-3">
@@ -24,11 +24,11 @@
                                     <label for="floatingText">Mobile Number (123-456-789012)</label>
                                 </div>
                                 <div class="form-floating mb-3">
-                                    <input type="email" class="form-control" id="floatingInputGrid" placeholder="name@example.com" autocomplete="off">
+                                    <input type="email" class="form-control" id="floatingInputGrid" placeholder="name@example.com" required autocomplete="off">
                                     <label for="floatingInputGrid">Email address</label>
                                 </div>
                                 <div class="form-floating">
-                                    <textarea name="message" class="form-control mb-3" placeholder="Leave your message here" id="floatingTextarea2" style="height: 100px"></textarea>
+                                    <textarea name="message" class="form-control mb-3" placeholder="Leave your message here" id="floatingTextarea2" required autocomplete="off" style="height: 100px"></textarea>
                                     <label for="floatingTextarea2">Message</label>
                                     <button class="w-100 btn btn-lg btn-primary" type="submit">Send Message</button>
                                 </div>
