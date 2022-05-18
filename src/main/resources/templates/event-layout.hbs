@@ -35,7 +35,7 @@
         <div class="container col-xxl-8 px-4 py-5">
             <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
 
-                          <form class="p-4 p-md-5 border rounded-3 bg-light">
+                          <form action="/" oninput="Total.value=parseInt(a.value)*parseInt(b.value)" class="p-4 p-md-5 border rounded-3 bg-light">
                               <div>
                                   <h3 class="text-center"> SELECT YOUR TICKETS</h3>
                                   <hr class="my-4">
@@ -43,21 +43,21 @@
                               <div class="row g-2">
                               <div class="col-md">
                               <div class="form-floating mb-3">
-                                  <input name="Quantity" type="number" min="1" max="15" class="form-control" id="floatingInput" placeholder="How many tickets" autocomplete="off" required>
+                                  <input name="Quantity" type="number" min="1" max="15" class="form-control" id="a" placeholder="How many tickets" autocomplete="off" required>
                                   <label for="floatingInput">How many tickets?</label>
                               </div>
                               </div>
                               <div class="col-md">
                                   <div class="form-floating">
-                                      <select class="form-select" id="floatingSelectGrid" name="TicketType" required autocomplete="off">
+                                      <select class="form-select" id="b" name="TicketType" required autocomplete="off">
                                           <option>  </option>
-                                          <option value="1000">Early Bird</option>
-                                          <option value="500">Kidz</option>
-                                          <option value="1500">Normal</option>
-                                          <option value="2500">VIP</option>
-                                          <option value="3500">VVIP</option>
+                                          <option label="Early Bird" value="1000">Early Bird</option>
+                                          <option label="Kidz" value="500">Kidz</option>
+                                          <option label="Normal" value="1500">Normal</option>
+                                          <option label="VIP" value="2500">VIP</option>
+                                          <option label="VVIP" value="3500">VVIP</option>
                                       </select>
-                                      <label for="floatingSelectGrid">Select Ticket Type</label>
+                                      <label for="b">Select Ticket Type</label>
                                   </div>
                               </div>
                               </div>
@@ -78,14 +78,13 @@
                               <div class="row g-2">
                                   <div class="col-md">
                                       <div class="form-floating mb-3">
-                                          <input type="number" class="form-control" id="floatingPassword" placeholder="mobile number" required autocomplete="off">
-                                          <label for="floatingPassword">Mobile Number</label>
+                                          <input type="tel" class="form-control" pattern="[0-9]{3}-[0-9]{3}-[0-9]{6}" id="floatingPassword" placeholder="Format: 123-456-789012" required autocomplete="off">
+                                          <label for="floatingText">Mobile Number</label>
                                       </div>
                                   </div>
                                       <div class="col-md">
                                           <div class="form-floating mb-3">
-                                              <input type="text" name="Total" readonly class="form-control-plaintext p-2" id="floatingPlaintextInput" >
-                                              <label for="floatingPlaintextInput">Total Amount</label>
+                                              <span class="text-muted">Total Amount: </span><input type="text" name="Total" readonly class="form-control-plaintext p-2 fs-4 fw-bold" for="a b">
                                           </div>
                                       </div>
                               </div>

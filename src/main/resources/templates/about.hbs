@@ -2,15 +2,39 @@
 
     <section id="about">
 
-        <div class="row pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
-            <div class="col-lg-7 mt-5 p-lg-5 p-5 pt-lg-3">
+        <div class="row pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3">
+            <div class="col-lg-6 mt-5 p-lg-5 p-5 pt-lg-3">
                 <h1 class="display-4 fw-bold lh-1 ">About 'n-tiko'</h1>
                 <p class="lead">Nyakua Tiko Inc. is a women-led Events company Kenya. The phrase Nyakua tiko is an Swahili slung phrase get your ticket. It has been abbreviated to n-tiko. As a users, you are able to know the upcoming Entertainment events, subscribe to them, and buy your tickets.<p>
                 <p class="lead"><strong>N-Tiko</strong> brings the youth together through live experiences near them. Discover events that match your passions, or create your own with N-Tiko Application today.</p>
                 <div class="d-grid gap-2 mt-5 d-md-flex justify-content-md-start mb-4 mb-lg-3">
-                    <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold">Add an Event</button>
-                    <button type="button" class="btn btn-outline-secondary btn-lg px-4">Contact</button>
+                    <a type="button" href="/contactUs" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold">Register your Event</a>
+                    <a href="/contactsUs" type="button" class="btn btn-outline-secondary btn-lg px-4">Contact</a>
                 </div>
+            </div>
+            <div class="col-md-6 mx-auto col-lg-5 mt-4 mb-4">
+
+                <form class="p-4 p-md-5 border rounded-3 bg-danger bg-opacity-10">
+                    <div>
+                        <span class="fs-4 text-center">Register Your Event Here</span><br>
+                        <small class="text-muted text-center">We Will contact you for more information.</small>
+                        <hr class="my-4">
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" name="name" class="form-control" id="floatingPassword" placeholder="Name" autocomplete="off" required>
+                        <label for="floatingPassword">Name</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="tel" name="name" class="form-control" id="floatingPassword" placeholder="Format: 123-456-789012" autocomplete="off" required>
+                        <label for="floatingPassword">Mobile Number</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required autocomplete="off">
+                        <label for="floatingInput">Email address</label>
+                    </div>
+
+                    <button class="w-100 btn btn-lg btn-primary" type="submit">Regiter your Event</button>
+                </form>
             </div>
         </div>
 
