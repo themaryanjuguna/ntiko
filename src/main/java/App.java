@@ -31,9 +31,9 @@ public class App {
 
 
        //Contact page
-        get("/contacts", (request, response) ->{
+        get("/contactsUs", (request, response) ->{
 
-            return new ModelAndView(model, "contacts.hbs");
+            return new ModelAndView(model, "contactsUs.hbs");
         }, new HandlebarsTemplateEngine());
 
 
