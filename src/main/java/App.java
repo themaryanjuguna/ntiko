@@ -43,5 +43,11 @@ public class App {
             return new ModelAndView(model, "event-layout.hbs");
         }, new HandlebarsTemplateEngine());
 
+        //Eventnew page
+       /* get("/events", (request, response) ->{
+
+            return new ModelAndView(model, "events.hbs");
+        }, new HandlebarsTemplateEngine());*/
+
     }
 }
