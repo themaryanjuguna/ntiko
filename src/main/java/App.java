@@ -36,5 +36,12 @@ public class App {
             return new ModelAndView(model, "contacts.hbs");
         }, new HandlebarsTemplateEngine());
 
+
+        //Eventnew page
+        get("/event-layout", (request, response) ->{
+
+            return new ModelAndView(model, "event-layout.hbs");
+        }, new HandlebarsTemplateEngine());
+
     }
 }
