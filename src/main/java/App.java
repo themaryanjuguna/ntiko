@@ -44,10 +44,10 @@ public class App {
         }, new HandlebarsTemplateEngine());
 
         //Eventnew page
-       /* get("/events", (request, response) ->{
+       get("/", (request, response) ->{
 
-            return new ModelAndView(model, "events.hbs");
-        }, new HandlebarsTemplateEngine());*/
+            return new ModelAndView(model, "Submission.hbs");
+        }, new HandlebarsTemplateEngine());
 
     }
 }

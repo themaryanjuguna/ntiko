@@ -2,9 +2,9 @@
 
     <section id="eventheader">
         <div class="p-5 mb-4 bg-danger bg-opacity-25 rounded-3">
-            <div class="container-fluid py-5 text-center">
+            <div class="container-fluid py-5">
                 <h1 class="display-5 fw-bold">Event Title: {{EventName}}</h1>
-                <p class="col-md-8 text-center fs-6">Event Date: {{EventDate}} | Event Location: {{EventLocation}}</p>
+                <p class="col-md-8 fs-6">Event Date: {{EventDate}} | Event Location: {{EventLocation}}</p>
             </div>
         </div>
     </section>
@@ -19,9 +19,9 @@
                 <div class="col-lg-6">
                     <h1 class="display-5 fw-bold lh-1 mb-3">Event Description</h1>
                     <p class="lead">Event Description {{EventDetails}}.</p>
-                    <h3><span class="badge bg-danger"> Normal Ticket KES 1,500 {{Pricemoney}}</span></h3>
+
                     <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                        <a type="button" class="btn btn-primary btn-lg px-4 me-md-2" href="#BuyTicket">Purchase Ticket</a>
+                        <a type="button" class="btn btn-danger btn-lg px-4 me-md-2" href="#BuyTicket">Purchase Ticket</a>
                         <a type="button" class="btn btn-outline-secondary btn-lg px-4" href="/events">View other Events</a>
                     </div>
                 </div>
@@ -35,7 +35,7 @@
         <div class="container col-xxl-8 px-4 py-5">
             <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
 
-                          <form action="/" oninput="Total.value=parseInt(a.value)*parseInt(b.value)" class="p-4 p-md-5 border rounded-3 bg-light">
+                          <form action="/Submission" oninput="Total.value=parseInt(a.value)*parseInt(b.value)" class="p-4 p-md-5 border rounded-3 bg-light">
                               <div>
                                   <h3 class="text-center"> SELECT YOUR TICKETS</h3>
                                   <hr class="my-4">
@@ -90,7 +90,7 @@
                               </div>
                               <button class="w-100 btn btn-lg btn-success" type="submit">Purchase Ticket</button>
                             <hr class="my-4">
-                            <small class="text-muted">By clicking Purchase, you agree to the terms of use.</small>
+                            <small class="text-muted text-center">By clicking Purchase, you agree to the terms of use.</small>
                         </form>
                     </div>
                 <div class="col-10 col-sm-8 col-lg-6"></div>
