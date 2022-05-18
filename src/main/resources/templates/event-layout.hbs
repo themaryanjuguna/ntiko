@@ -4,9 +4,52 @@
         <div class="p-5 mb-4 bg-danger bg-opacity-25 rounded-3">
             <div class="container-fluid py-5 text-center">
                 <h1 class="display-5 fw-bold">Event Title: {{EventName}}</h1>
-                <p class="col-md-8 text-center fs-4">Event Date: {{EventDate}}</p>
+                <p class="col-md-8 text-center fs-6">Event Date: {{EventDate}} | Event Location: {{EventLocation}}</p>
             </div>
         </div>
+    </section>
+
+    <section>
+
+        <div class="container col-xxl-8 px-4 py-5">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                <div class="col-10 col-sm-8 col-lg-6">
+                    <img src="/images/img.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold lh-1 mb-3">Event Description</h1>
+                    <p class="lead">Event Description {{EventDetails}}.</p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                        <a type="button" class="btn btn-primary btn-lg px-4 me-md-2" href="#BuyTicket">Purchase Ticket</a>
+                        <a type="button" class="btn btn-outline-secondary btn-lg px-4" href="/events">View other Events</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="BuyTicket" class="bg-warning bg-opacity-50">
+
+        <div class="container col-xxl-8 px-4 py-5">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                <div class="col-10 col-sm-8 col-lg-6">
+                    <h1 class="display-5 fw-bold lh-1 mb-3">Event Description</h1>
+                    <p class="lead">Event Description {{EventDetails}}.</p>
+                    <h3><span class="badge bg-danger">KES 5000 {{Pricemoney}}</span></h3>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                        <a type="button" class="btn btn-primary btn-lg px-4 me-md-2" href="#BuyTicket">Purchase Ticket</a>
+                        <a type="button" class="btn btn-outline-secondary btn-lg px-4" href="/events">View other Events</a>
+                </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="/images/img.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+
+                </div>
+            </div>
+        </div>
+
+
     </section>
 
 
