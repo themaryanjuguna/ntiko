@@ -29,12 +29,18 @@ Email varchar);
 ## Dependencies
 1. Java
 2. Gradle
+3. Maven
 
 ## Technology used
 1. Java
+2. spark framework
+3. handlebars
+4. HTML
+5. CSS
+6. Bootstrap
 
 ## Author Details
-- Diana Kieru
+- Diana Kieru [LinkedIn Profile](https://www.linkedin.com/in/diana-kieru-a71770227/)
 - Joan Kariuki
 - Maryanne Njuguna [Linktree Profile](https://linktr.ee/themaryanjuguna)
 - Shannon Bulimo
