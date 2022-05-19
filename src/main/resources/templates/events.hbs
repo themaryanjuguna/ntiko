@@ -1,0 +1,47 @@
+{{#partial "content"}}
+<section id="event">
+    <div class="p-5 mb-4 bg-danger bg-opacity-25 rounded-3">
+        <div class="container-fluid py-5">
+            <h1 class="display-5 fw-bold">Events Line up</h1>
+            <p class="col-md-8 fs-4">Don't have you weekend plans? We've got you! </p>
+            <a href="/#eventcard" class="btn btn-primary btn-lg" type="button">Find an Event</a>
+        </div>
+    </div>
+
+
+</section>
+
+<section id="event card">
+    <div class="container px-4 py-5" id="custom-cards">
+        <h2 class="pb-2 border-bottom">What's Happening</h2>
+
+        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+            <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-4 shadow-lg" style="background-image: url('/images/img.png');">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 bg-dark bg-opacity-50 text-white text-shadow-1">
+
+                        <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Short title, long jacket</h2>
+                        <ul class="d-flex list-unstyled mt-auto">
+                            <li class="me-auto">
+                                <img src="/images/tikologosq.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+
+                            </li>
+                                <li class="d-flex align-items-center">
+                                <a type="button" class="btn btn-sm btn-danger" href="/event-layout">View</a>
+                                <a href="/event-layout#BuyTicket" type="button" class="btn btn-sm btn-danger">Buy Ticket</a>
+                                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+                                    <small><span class="badge bg-primary">16/06</span></small>
+                            </li>
+                        </ul>
+
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{{/partial}}
+
+{{> "layout.hbs"}}
