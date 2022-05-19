@@ -31,9 +31,9 @@ public class App {
 
 
        //Contact page
-        get("/contacts", (request, response) ->{
+        get("/contactsUs", (request, response) ->{
 
-            return new ModelAndView(model, "contacts.hbs");
+            return new ModelAndView(model, "contactsUs.hbs");
         }, new HandlebarsTemplateEngine());
 
 
@@ -41,6 +41,12 @@ public class App {
         get("/event-layout", (request, response) ->{
 
             return new ModelAndView(model, "event-layout.hbs");
+        }, new HandlebarsTemplateEngine());
+
+        //Eventnew page
+       get("/Submission", (request, response) ->{
+
+            return new ModelAndView(model, "Submission.hbs");
         }, new HandlebarsTemplateEngine());
 
     }
