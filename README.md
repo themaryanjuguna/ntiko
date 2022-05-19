@@ -13,7 +13,16 @@ It is an Event ticket selling Application. Users are able to know the upcoming E
 ### DATABASE SET UP.
 ```
 * Type in psql
-* CREATE DATABASE 
+* CREATE DATABASE ntiko;
+* CREATE TABLE eventOrganiser(eventOrganiserId serial PRIMARY KEY,
+Name int,( to be changed to string)
+telephoneNumber varchar,
+Email varchar);
+* CREATE TABLE ticket (ticketId serial PRIMARY KEY, eventId int, Type varchar, Status varchar);
+* CREATE TABLE events (eventId serial PRIMARY KEY, eventOrganiserId int, Price money, EventName varchar);
+* CREATE TABLE contacts (contactUsId serial PRIMARY KEY, Name varchar, phoneNumber int, Email varchar, Message varchar);
+* CREATE TABLE subscriber (Name varchar, Email varchar, phoneNumber int, eventid int, subscriberId serial PRIMARY KEY, Quantity int, Total money);
+* 
 
 ```
 
