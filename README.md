@@ -1,4 +1,4 @@
-# ntiko
+# n-tiko
 It is an Event ticket selling Application. Users are able to know the upcoming Entertainment events, subscribe to them, and buy their tickets. N-Tiko brings the youth together through live experiences near them. Discover events that match your passions, or create your own with N-Tiko Application today.
 
 ## User Stories
